@@ -1,0 +1,73 @@
+:root {
+  /* font family */
+  --primaryFont: ;
+  --secondaryFont: ;
+  --tertiaryFont: ;
+  --quaternaryFont: ;
+  --quinaryFont: ;
+
+  /* font weight */
+  --wRegular: 400;
+  --wMedium: 500;
+  --wSemiBold: 600;
+  --wBold: 700;
+  --wExtraBold: 800;
+  --wBlack: 900;
+
+  /* color */
+  --primaryColor: ;
+  --secondaryColor: ;
+  --tertiaryColor: ;
+  --quaternaryColor: ;
+  --quinaryColor: ;
+  --darkColor: rgba(0, 0, 0, 1);
+  --darkColor2: rgba(34, 34, 34, 1);
+  --lightColor: rgba(255, 255, 255, 1);
+  --lightColor2: rgba(220, 220, 220, 1);
+  --buttonColor: rgba(230, 83, 60, 1);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: var(--primaryFont);
+  font-weight: var(--wRegular);
+  line-height: 160%;
+  font-size: 1rem;
+  font-style: normal;
+  letter-spacing: 0rem;
+  color: var(--darkColor2);
+}
+
+.btn {
+  border-radius: 42px;
+  padding: 16px 40px;
+  border: none;
+  background-color: var(--buttonColor);
+  color: var(--lightColor);
+  font-family: var(--primaryFont);
+  font-weight: var(--wSemiBold);
+  font-size: 1.125rem;
+  line-height: 122%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
